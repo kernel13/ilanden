@@ -7,6 +7,10 @@ gem 'rails', '3.2.1'
 
 group :development, :test do
   gem 'sqlite3'
+  gem "rspec-rails", "~> 2.0"
+  gem 'guard-rspec'
+  gem 'growl'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
 end
 
 
@@ -30,7 +34,7 @@ gem 'jquery-rails'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the web server
+# Use unicorn as he web server
 # gem 'unicorn'
 
 # Deploy with Capistrano
@@ -44,10 +48,11 @@ gem 'refinerycms', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
-#  gem 'refinerycms-blog', '~> 2.0.0'
+gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
+#  gem 'refinerycms-testing'
 
 # The Heroku gem allows you to interface with Heroku's API
 gem 'heroku'
