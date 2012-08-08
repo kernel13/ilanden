@@ -10,7 +10,7 @@ group :development, :test do
   gem "rspec-rails", "~> 2.0"
   gem 'guard-rspec'
   gem 'growl'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  #gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
 end
 
 
