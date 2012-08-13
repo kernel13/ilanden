@@ -1,0 +1,16 @@
+
+ <% if @notes.any? %>
+   <section id="notes">
+  <ul>
+     <%= render :partial => "note", :collection => @notes %>
+     <%= will_paginate @notes %>
+ </ul>
+   </section>
+ <% else %>
+   <p></p>
+ <% end %>
+
+<%# render '/refinery/blog/shared/body_content_right' %>
+
+<%# render "/refinery/content_page" %>
+<%# content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>

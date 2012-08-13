@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Pridať Note
+            reorder: Preusporiadať Notes
+            reorder_done: Koniec radenia Notes
+          records:
+            title: Notes
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Notes. Kliknite na "Pridať Note" pre pridanie prvého note.
+          note:
+            view_live_html: Zobraziť náhľad note<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť note
+            delete: Zmazať note
+      notes:
+        show:
+          other: Daľšie Notes
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

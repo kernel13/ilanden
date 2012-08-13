@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+#        article: masculino/femenino
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Crear nuevo note
+            reorder: Reordenar notes
+            reorder_done: Reordenación de notes completada
+          records:
+            title: Notes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay notes todavía. Pulsa en "Crear nuevo Note" para crear tu primer note.
+          note:
+            view_live_html: Ver este note como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este note
+            delete: Borrar este note para siempre
+      notes:
+        show:
+          other: Otros notes
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

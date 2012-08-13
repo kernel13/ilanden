@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Notes::Admin::NotesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.notes_admin_notes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_notes_admin_note_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Notes::Admin::NotesController.sortable? && ::Refinery::Notes::Note.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Notes"),
+                 refinery.notes_admin_notes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Notes"),
+                 refinery.notes_admin_notes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

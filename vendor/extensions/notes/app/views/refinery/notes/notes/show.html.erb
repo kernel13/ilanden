@@ -1,0 +1,28 @@
+<% content_for :body_content_title do %>
+  <%= @note.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+   
+    <p>
+      <%=raw @note.body %>
+    </p>
+  </section>
+
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="notes">
+      <% @notes.each do |note| %>
+        <li>
+          <%= link_to note.name, refinery.notes_note_path(note) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

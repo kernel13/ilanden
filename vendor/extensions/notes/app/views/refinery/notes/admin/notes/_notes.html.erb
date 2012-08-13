@@ -1,0 +1,2 @@
+<%= will_paginate @notes if Refinery::Notes::Admin::NotesController.pageable? %>
+<%= render 'sortable_list' %>

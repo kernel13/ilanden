@@ -1,0 +1,21 @@
+<% content_for :body_content_left do %>
+  <ul id="notes">
+    <% @notes.each do |note| %>
+      <li>
+        <%= link_to note.name, refinery.notes_note_path(note) %>
+		<br />
+	 	<%=	truncate(note.body, {
+	  				:length => 250,
+	  				:preserve_html_tags => true
+	 				}).html_safe if !note.body.empty? %>
+      </li>
+    <% end %>
+	<%= will_paginate @notes %>
+  </ul>
+<% end %>
+
+<section id="body_content_right">
+<%= render 'tags'%>
+</section>
+
+<%= render '/refinery/content_page' %>

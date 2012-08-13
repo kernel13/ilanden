@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Lag en ny Note
+            reorder: Endre rekkefølgen på Notes
+            reorder_done: Ferdig å endre rekkefølgen Notes
+          records:
+            title: Notes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Notes enda. Klikk på "Lag en ny Note" for å legge til din første note.
+          note:
+            view_live_html: Vis hvordan denne note ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne note
+            delete: Fjern denne note permanent
+      notes:
+        show:
+          other: Andre Notes
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

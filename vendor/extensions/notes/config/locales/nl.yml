@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Maak een nieuwe Note
+            reorder: Wijzig de volgorde van de Notes
+            reorder_done: Klaar met het wijzingen van de volgorde van de Notes
+          records:
+            title: Notes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Notes. Druk op 'Maak een nieuwe Note' om de eerste aan te maken.
+          note:
+            view_live_html: Bekijk deze note op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze note
+            delete: Verwijder deze note voor eeuwig
+      notes:
+        show:
+          other: Andere Notes
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

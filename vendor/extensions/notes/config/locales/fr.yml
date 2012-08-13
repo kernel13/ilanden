@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Note
+            reorder: Réordonner les Notes
+            reorder_done: Fin de réordonnancement des Notes
+          records:
+            title: Notes
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Note. Cliquer sur "Créer un(e) nouve(au/l/lle) Note" pour créer votre premi(er/ère) note.'
+          note:
+            view_live_html: Voir ce(t/tte) note <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) note
+            delete: Supprimer définitivement ce(t/tte) note
+      notes:
+        show:
+          other: Autres Notes
+        tags:
+          title: Tags
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

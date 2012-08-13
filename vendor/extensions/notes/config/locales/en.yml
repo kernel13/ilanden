@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      notes:
+        title: Notes
+    notes:
+      admin:
+        notes:
+          actions:
+            create_new: Add New Note
+            reorder: Reorder Notes
+            reorder_done: Done Reordering Notes
+          records:
+            title: Notes
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Notes yet. Click "Add New Note" to add your first note.
+          note:
+            view_live_html: View this note live <br/><em>(opens in a new window)</em>
+            edit: Edit this note
+            delete: Remove this note forever
+      notes:
+        show:
+          other: Other Notes
+        tags:
+          title: Tags
+  activerecord:
+    attributes:
+      'refinery/notes/note':
+        name: Name
+        body: Body
+        user_id: User

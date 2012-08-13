@@ -80,3 +80,21 @@ body{
 	}
 }
 
+#body_content_left{
+	width: 700px;
+	float: left;
+}
+
+#body_content_right{
+	width: 200px;
+	float: right;
+	background-color: #d3c9c0;
+	padding: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	h2{
+		color: #ac623e;
+		font-size: 0.9em;
+	}
+}
